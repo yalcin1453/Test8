@@ -14,8 +14,13 @@ public class SearchUsers extends TestBase {
         driver.get("http://www.kaolapalace-qa-environment2.com/");
         WebElement login= driver.findElement(By.linkText("Log in"));
         login.click();
-
-
+        driver.findElement(By.id("UserName")).sendKeys("manager2");
+        driver.findElement(By.id("Password")).sendKeys("Man1ager2!");
+        driver.findElement(By.id("btnSubmit")).click();
+    }
+    @Test
+    public void userSearch(){
+        login();
 
 
 
