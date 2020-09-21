@@ -21,6 +21,7 @@ public class SearchUsers extends TestBase {
     @Test
     public void userSearch(){
         login();
+        driver.findElement(By.id("xvdvdbs"));
 
 
 
