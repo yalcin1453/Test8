@@ -23,6 +23,7 @@ public class SearchUsers extends TestBase {
     @Test
     public void userSearch(){
         login();
+
         WebElement email= driver.findElement(By.xpath("(//input[@class='form-control form-filter input-sm'])[3]"));
         email.sendKeys("fatih721@gmail");
         WebDriverWait wait= new WebDriverWait(driver,20);
@@ -30,6 +31,10 @@ public class SearchUsers extends TestBase {
         search.click();
 
        
+
+        driver.findElement(By.id("name"));
+       // driver.findElement();
+
         
 
 
