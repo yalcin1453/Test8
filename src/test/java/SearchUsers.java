@@ -22,7 +22,7 @@ public class SearchUsers extends TestBase {
     public void userSearch(){
         login();
         driver.findElement(By.id("name"));
-        driver.findElement();
+       // driver.findElement();
         
 
 
